@@ -111,3 +111,7 @@ PRODUCT_COPY_FILES += \
 # Secure element
 PRODUCT_PACKAGES += \
     SecureElement
+
+# WiFi
+PRODUCT_PACKAGES += \
+    TargetWifiOverlay
