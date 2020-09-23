@@ -20,6 +20,7 @@ TARGET_KERNEL_CONFIG += vendor/xiaomi/polaris.config
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/vendor.qti.esepowermanager@1.0-service.xml
 
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
