@@ -6,11 +6,16 @@
 
 $(call inherit-product, device/xiaomi/polaris/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common soark stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_polaris
+PRODUCT_NAME := spark_polaris
 PRODUCT_DEVICE := polaris
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2S
