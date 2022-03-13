@@ -1,14 +1,22 @@
 #
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2018-2021 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
+<<<<<<< HEAD
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 OVERRIDE_PRODUCT_COMPRESSED_APEX := false
+=======
+
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+PRODUCT_COMPRESSED_APEX := false
+>>>>>>> branch 'spark' of https://github.com/julival25/android_device_xiaomi_polaris
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/polaris/polaris-vendor.mk)
@@ -54,7 +62,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_wcd9340.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_wcd9340.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
+<<<<<<< HEAD
 # Cgroup and task_profiles
+=======
+# Control groups and task profiles
+>>>>>>> branch 'spark' of https://github.com/julival25/android_device_xiaomi_polaris
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
@@ -66,6 +78,19 @@ PRODUCT_PACKAGES += \
 # Device init scripts
 PRODUCT_PACKAGES += \
     init.target.rc
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm845
+
+# GPS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
+    $(LOCAL_PATH)/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+    $(LOCAL_PATH)/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
+    $(LOCAL_PATH)/gps/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
+    $(LOCAL_PATH)/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
+    $(LOCAL_PATH)/gps/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
 
 # Display Calibration
 PRODUCT_COPY_FILES += \
@@ -113,17 +138,36 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+<<<<<<< HEAD
     android.hardware.nfc@1.2-service \
     NfcNci \
+=======
+    com.android.nfc_extras \
+    com.gsma.services.nfc \
+    com.nxp.nfc.nq \
+    libnqnfc_nci_jni \
+    nfc_nci.nqx.default.hw \
+    NQNfcNci \
+    nqnfcee_access.xml \
+    nqnfcse_access.xml \
+>>>>>>> branch 'spark' of https://github.com/julival25/android_device_xiaomi_polaris
     Tag \
+<<<<<<< HEAD
     android.hardware.secure_element@1.1 \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.secure_element@1.2 \
     android.hardware.secure_element@1.2.vendor \
     android.hardware.secure_element@1.0-service
+=======
+    vendor.nxp.hardware.nfc@2.0-service
+>>>>>>> branch 'spark' of https://github.com/julival25/android_device_xiaomi_polaris
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf \
+<<<<<<< HEAD
+=======
+    $(LOCAL_PATH)/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
+>>>>>>> branch 'spark' of https://github.com/julival25/android_device_xiaomi_polaris
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
 # NQ Client
@@ -144,7 +188,10 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     vendor/nxp/opensource/pn5xx
+<<<<<<< HEAD
 
 # Wallpapers
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
+=======
+>>>>>>> branch 'spark' of https://github.com/julival25/android_device_xiaomi_polaris

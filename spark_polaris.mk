@@ -6,8 +6,12 @@
 
 $(call inherit-product, device/xiaomi/polaris/device.mk)
 
+<<<<<<< HEAD
 # Some stuffs from SpsrkOS.
 
+=======
+# Inherit some common soark stuff.
+>>>>>>> branch 'spark' of https://github.com/julival25/android_device_xiaomi_polaris
 $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false

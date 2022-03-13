@@ -30,6 +30,7 @@
 on fs
     chmod 644 /mnt/vendor/persist/audio/us_manual_cal
     chmod 644 /persist/audio/us_manual_cal
+<<<<<<< HEAD
 
 service displayfeature-hal-1-0 /vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
     override
@@ -43,3 +44,5 @@ on boot
     # Smart Charging
     chown system system /sys/class/power_supply/battery/input_suspend
     chmod 0666 /sys/class/power_supply/battery/input_suspend
+=======
+>>>>>>> branch 'spark' of https://github.com/julival25/android_device_xiaomi_polaris

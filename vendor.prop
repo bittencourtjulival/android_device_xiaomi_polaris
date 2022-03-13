@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 # GNSS
 persist.vendor.overlay.izat.optin=rro
 
+=======
+>>>>>>> branch 'spark' of https://github.com/julival25/android_device_xiaomi_polaris
 # NFC
 ro.hardware.nfc_nci=nqx.default
 ro.se.type=HCE,UICC

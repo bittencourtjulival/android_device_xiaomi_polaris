@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2018-2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,6 +11,9 @@ DEVICE_PATH := device/xiaomi/polaris
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := polaris
+
+# Display
+TARGET_SCREEN_DENSITY := 440
 
 # Display
 TARGET_SCREEN_DENSITY := 440
@@ -29,9 +32,14 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 
 # Properties
+<<<<<<< HEAD
 TARGET_PRODUCT_PROP+= $(DEVICE_PATH)/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+=======
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+>>>>>>> branch 'spark' of https://github.com/julival25/android_device_xiaomi_polaris
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom

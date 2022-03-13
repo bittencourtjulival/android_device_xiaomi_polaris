@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,3 +15,11 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/spark_polaris.mk
+<<<<<<< HEAD
+=======
+
+COMMON_LUNCH_CHOICES := \
+    spark_polaris-user \
+    spark_polaris-userdebug \
+    spark_polaris-eng
+>>>>>>> branch 'spark' of https://github.com/julival25/android_device_xiaomi_polaris

@@ -1,5 +1,19 @@
+<<<<<<< HEAD
 # Spark-OS
 ro.spark.device.name=MI MIX 2S
 ro.spark.group.url=https://t.me/spark_polaris
 ro.spark.maintainer=Julival Bittencourt
 ro.spark.maintainer.username=bittencourtjulival
+=======
+# Camera
+persist.camera.sat.fallback.dist=45
+persist.camera.sat.fallback.dist.d=5
+persist.camera.sat.fallback.luxindex=405
+persist.camera.sat.fallback.lux.d=20
+
+#Spark-OS
+ro.spark.device.name=MI MIX 2S
+ro.spark.group.url=https://t.me/spark_polaris
+ro.spark.maintainer=Julival Bittencourt
+ro.spark.maintainer.username=bittencourtjulival 
+>>>>>>> branch 'spark' of https://github.com/julival25/android_device_xiaomi_polaris
