@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_polaris.mk
+    $(LOCAL_DIR)/aosp_polaris.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_polaris-user \
-    derp_polaris-userdebug \
-    derp_polaris-eng
+    aosp_polaris-user \
+    aosp_polaris-userdebug \
+    aosp_polaris-eng

@@ -15,10 +15,10 @@ TARGET_USES_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_polaris
+PRODUCT_NAME := aosp_polaris
 PRODUCT_DEVICE := polaris
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2S
