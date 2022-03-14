@@ -14,12 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_polaris.mk
-<<<<<<< HEAD
-=======
+    $(LOCAL_DIR)/derp_polaris.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_polaris-user \
-    spark_polaris-userdebug \
-    spark_polaris-eng
->>>>>>> branch 'spark' of https://github.com/julival25/android_device_xiaomi_polaris
+    derp_polaris-user \
+    derp_polaris-userdebug \
+    derp_polaris-eng

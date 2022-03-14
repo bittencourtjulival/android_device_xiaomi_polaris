@@ -6,21 +6,19 @@
 
 $(call inherit-product, device/xiaomi/polaris/device.mk)
 
-<<<<<<< HEAD
-# Some stuffs from SpsrkOS.
 
-=======
-# Inherit some common soark stuff.
->>>>>>> branch 'spark' of https://github.com/julival25/android_device_xiaomi_polaris
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+# Some stuffs from DerpFest
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USES_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# Inherit some common stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := spark_polaris
+PRODUCT_NAME := derp_polaris
 PRODUCT_DEVICE := polaris
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2S
