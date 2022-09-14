@@ -22,6 +22,14 @@
 <resources>
     <!-- Doze: check proximity sensor before pulsing? -->
     <bool name="doze_proximity_check_before_pulse">false</bool>
+	
+	<!-- Default rounded corner curve (a Bezier). Must match (the curved path in) rounded.xml.
+         Note that while rounded.xml includes the entire path (including the horizontal and vertical
+         corner edges), this pulls out just the curve.
+     -->
+    <string name="config_rounded_mask" translatable="false">
+        M0,50V0H50A50,50 0,0 0,0 50Z
+    </string>
     
     <!-- Unify back gesture vibration with system wide haptics -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
@@ -29,4 +37,3 @@
     <!-- Whether the combined qs shows in status bar -->
     <bool name="flag_combined_qs_headers">false</bool>
 </resources>
-
