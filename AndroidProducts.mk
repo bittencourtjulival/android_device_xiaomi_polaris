@@ -17,6 +17,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_polaris.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_polaris-user \
-    lineage_polaris-userdebug \
-    lineage_polaris-eng
+    spark_polaris-user \
+    spark_polaris-userdebug \
+    spark_polaris-eng
