@@ -37,9 +37,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Soong
+PRODUCT_BOARD_PLATFORM := sdm845
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/xiaomi\
+    hardware/qcom-caf/sdm845\
+    hardware/google/interfaces \
+    hardware/google/pixel
 
 # Treble
 PRODUCT_USE_VNDK_OVERRIDE := true
