@@ -9,6 +9,18 @@ $(call inherit-product, device/xiaomi/polaris/device.mk)
 # Inherit some common spark stuff.
 $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
+# Environment Flags
+TARGET_SUPPORTS_BLUR := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.spark.maintainer=bittencourtjulival
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Charging Animation
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := spark_polaris
 PRODUCT_DEVICE := polaris
