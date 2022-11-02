@@ -13,8 +13,10 @@ $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 TARGET_SUPPORTS_BLUR := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.spark.maintainer=bittencourtjulival
+    
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
