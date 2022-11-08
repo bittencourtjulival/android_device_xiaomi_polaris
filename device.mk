@@ -6,6 +6,9 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
+# Firmware
+$(call inherit-product, vendor/xiaomi-firmware/polaris/firmware.mk)
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -48,6 +51,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel
 
+# RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
+    
 # Treble
 PRODUCT_USE_VNDK_OVERRIDE := true
 
