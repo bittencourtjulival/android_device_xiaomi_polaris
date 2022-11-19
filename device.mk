@@ -9,11 +9,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 # Firmware
 $(call inherit-product-if-exists, vendor/xiaomi-firmware/polaris/firmware.mk)
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
-PRODUCT_COMPRESSED_APEX := false
-
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/polaris/polaris-vendor.mk)
 
