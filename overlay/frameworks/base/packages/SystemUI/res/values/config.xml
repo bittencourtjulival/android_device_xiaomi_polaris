@@ -22,5 +22,11 @@
 <resources>
     <!-- Doze: check proximity sensor before pulsing? -->
     <bool name="doze_proximity_check_before_pulse">false</bool>
+    
+    <!-- Unify back gesture vibration with system wide haptics -->
+    <bool name="config_vibrateOnIconAnimation">true</bool>
+
+    <!-- Whether the combined qs shows in status bar -->
+    <bool name="flag_combined_qs_headers">false</bool>
 </resources>
 
