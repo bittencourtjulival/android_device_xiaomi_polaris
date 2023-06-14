@@ -40,11 +40,7 @@ PRODUCT_USES_QCOM_HARDWARE := true
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/xiaomi\
-    hardware/qcom-caf/sdm845\
-    hardware/google/interfaces \
-    hardware/google/pixel
+    $(LOCAL_PATH)
 
 # RemovePackages
 PRODUCT_PACKAGES += \
